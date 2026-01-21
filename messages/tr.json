@@ -1,0 +1,24 @@
+{
+  "Index": {
+    "title": "Merhaba Dünya",
+    "home": "Ana Sayfa",
+    "about": "Hakkında",
+    "projects": "Projelerim",
+    "FeaturedProjects": "Öne Çıkan Projeler"
+  },
+  "Hero": {
+    "welcome": "Merhaba Dünya, Ömer",
+    "description": "GitHub üzerindeki serüvenimi ve inşa ettiğim dijital dünyayı keşfedin.",
+    "buttons": {
+      "viewProjects": "Projeleri Gör",
+      "contact": "İletişim"
+    }
+  },
+  "ProjectsCard": {
+    "noDescription": "Bu proje için bir açıklama girilmemiş ama kesinlikle harika bir iş!",
+    "links": {
+      "github": "GitHub Kaynak Kodu",
+      "demo": "Canlı Demo"
+    }
+  }
+}

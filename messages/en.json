@@ -1,0 +1,24 @@
+{
+  "Index": {
+    "title": "Hello World",
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "FeaturedProjects": "Featured Projects"
+  },
+  "Hero": {
+    "welcome": "Hello World, I'm Omer",
+    "description": "Explore my journey on GitHub and the digital world I've built.",
+    "buttons": {
+      "viewProjects": "View Projects",
+      "contact": "Contact"
+    }
+  },
+  "ProjectsCard": {
+    "noDescription": "No description provided for this project, but it's definitely a great job!",
+    "links": {
+      "github": "GitHub Source Code",
+      "demo": "Live Demo"
+    }
+  }
+}

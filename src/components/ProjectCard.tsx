@@ -3,10 +3,12 @@
 import { GithubRepo } from "@/lib/github";
 import { motion } from "framer-motion";
 import { Github, Star, ExternalLink, Code2, Globe } from "lucide-react";
+import { useTranslations } from "next-intl";
 // Az önce tanımladığın interface'i buraya import et veya üstüne ekle
 
 
 export default function ProjectCard({ repo }: { repo: GithubRepo }) {
+  const t = useTranslations('ProjectsCard');
   return (
     <motion.div
       // Giriş animasyonu: Sayfa açıldığında hafifçe yukarı kayarak belirir
@@ -28,7 +30,7 @@ export default function ProjectCard({ repo }: { repo: GithubRepo }) {
             target="_blank" 
             rel="noopener noreferrer" // Güvenlik için şart
             className="hover:text-white transition-colors"
-            title="GitHub Kaynak Kodu"
+            title={t('links.github')}
           >
             <Github size={20} />
           </a>
@@ -40,7 +42,7 @@ export default function ProjectCard({ repo }: { repo: GithubRepo }) {
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:text-neon-cyan transition-colors"
-              title="Canlı Demo"
+              title={t('links.demo')}
             >
               <Globe size={20} />
             </a>
@@ -59,7 +61,7 @@ export default function ProjectCard({ repo }: { repo: GithubRepo }) {
       </h3>
       
       <p className="text-gray-400 text-sm leading-relaxed mb-6 line-clamp-2 min-h-[40px]">
-        {repo.description || "Bu proje için bir açıklama girilmemiş ama kesinlikle harika bir iş!"}
+        {repo.description || t('noDescription')}
       </p>
 
       <div className="flex items-center justify-between mt-auto">

@@ -7,11 +7,28 @@
     "FeaturedProjects": "Featured Projects"
   },
   "Hero": {
-    "welcome": "Hello World, I'm Omer",
+    "welcome": "Hello World, I'm",
+    "name": "Omer",
     "description": "Explore my journey on GitHub and the digital world I've built.",
     "buttons": {
       "viewProjects": "View Projects",
       "contact": "Contact"
+    }
+  },
+  "About": {
+    "title": "About Me",
+    "description": "Hello! I'm Omer. I love building user-oriented, performant, and aesthetic digital experiences with modern web technologies. I am a person who constantly learns and does not hesitate to try new technologies. Currently, I am mainly in the Next.js and TypeScript ecosystem.",
+    "location": {
+      "title": "Location",
+      "value": "Trabzon, Turkiye"
+    },
+    "work": {
+      "title": "Work",
+      "value": "Freelance / Projects"
+    },
+    "vision": {
+      "title": "Vision",
+      "description": "My main goal is not just to write code, but to solve a problem in the most elegant and efficient way. In the future, I want to take part in the architecture of large-scale systems."
     }
   },
   "ProjectsCard": {
@@ -20,5 +37,10 @@
       "github": "GitHub Source Code",
       "demo": "Live Demo"
     }
+  },
+  "Contact": {
+    "title": "LET'S MEET!",
+    "description": "You can always write to me for new projects, collaborations, or just to say hello.",
+    "footer": "All rights reserved in codes."
   }
 }

@@ -4,18 +4,21 @@ import { motion } from "framer-motion";
 export const FloatingShape = ({ color, size, top, left, delay }: any) => {
   return (
     <motion.div
-     className={`absolute rounded-2xl border border-white/20 bg-white/10 backdrop-blur-sm z-0`}
+      // BURASI DÜZELTİLDİ: ${color} değişkenini içeri aldık, sabit bg-white/5'i sildik.
+      className={`absolute rounded-2xl border border-white/20 ${color} backdrop-blur-md shadow-2xl shadow-white/10`}
+      // z-0 sildik çünkü zaten container'ın içinde kontrol edeceğiz
       style={{ width: size, height: size, top, left }}
       animate={{
-        y: [0, 40, 0], // Yukarı aşağı yüzer
-        rotate: [0, 180, 360], // Kendi etrafında döner
-        scale: [1, 1.1, 1], // Hafif nefes alma efekti
+        y: [0, -100, 0],
+        x: [0, 50, 0],
+        rotate: [0, 180, 360],
+        scale: [1, 1.2, 1],
       }}
       transition={{
-        duration: 10 + Math.random() * 5, // Her biri farklı hızda
+        duration: 12,
         repeat: Infinity,
         delay: delay,
-        ease: "linear",
+        ease: "easeInOut", // Daha yumuşak hareket
       }}
     />
   );

@@ -7,11 +7,28 @@
     "FeaturedProjects": "Öne Çıkan Projeler"
   },
   "Hero": {
-    "welcome": "Merhaba Dünya, Ömer",
+    "welcome": "Merhaba Dünya, Ben",
+    "name": "Ömer",
     "description": "GitHub üzerindeki serüvenimi ve inşa ettiğim dijital dünyayı keşfedin.",
     "buttons": {
       "viewProjects": "Projeleri Gör",
       "contact": "İletişim"
+    }
+  },
+  "About": {
+    "title": "Hakkımda",
+    "description": "Merhaba! Ben Ömer. Modern web teknolojileriyle kullanıcı odaklı, performanslı ve estetik dijital deneyimler inşa etmeyi seviyorum. Sürekli öğrenen ve yeni teknolojileri denemekten çekinmeyen biriyim. Şu an ağırlıklı olarak Next.js ve TypeScript ekosistemindeyim.",
+    "location": {
+      "title": "Konum",
+      "value": "Trabzon, Türkiye"
+    },
+    "work": {
+      "title": "Çalışma",
+      "value": "Freelance / Proje"
+    },
+    "vision": {
+      "title": "Vizyon",
+      "description": "Sadece kod yazmak değil, bir problemi en şık ve verimli şekilde çözmek asıl amacım. Gelecekte büyük ölçekli sistemlerin mimarisinde yer almak istiyorum."
     }
   },
   "ProjectsCard": {
@@ -20,5 +37,10 @@
       "github": "GitHub Kaynak Kodu",
       "demo": "Canlı Demo"
     }
+  },
+  "Contact": {
+    "title": "HADİ TANIŞALIM!",
+    "description": "Yeni projeler, iş birlikleri veya sadece selam vermek için bana her zaman yazabilirsin.",
+    "footer": "Tüm hakları kodlarda saklıdır."
   }
 }

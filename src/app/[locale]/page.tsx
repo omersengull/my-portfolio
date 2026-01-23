@@ -7,6 +7,8 @@ import LanguageSwitcher from "@/components/SwitchLanguageButton";
 import { FloatingShape } from "@/components/FloatingShape";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
+import { Meteors } from "@/components/Meteors";
+import { Spotlight } from "@/components/Spotlight";
 
 export default async function Home() {
   const repos = await fetchGithubRepos();
@@ -15,12 +17,14 @@ export default async function Home() {
   return (
     // 1. DÜZELTME: main'den bg rengini kaldırdık, relative bıraktık
     <main className="relative min-h-screen w-full flex flex-col items-center p-6 overflow-x-hidden">
+      <Spotlight />
       
       {/* 2. DÜZELTME: En alt katman (Zifiri Karanlık Zemin) */}
       <div className="fixed inset-0 bg-[#020617] -z-50" />
 
       {/* 3. DÜZELTME: Auralar ve Izgara (Zemin'in bir tık üstü) */}
       <div className="fixed inset-0 -z-40 overflow-hidden pointer-events-none">
+        <Meteors number={40} />
         <div className="absolute top-[5%] left-[10%] w-[30rem] h-[30rem] bg-neon-cyan/10 rounded-full blur-[120px] animate-float" />
         <div className="absolute bottom-[5%] right-[10%] w-[35rem] h-[35rem] bg-neon-pink/10 rounded-full blur-[120px] animate-float [animation-delay:2s]" />
         <div className="absolute top-[30%] left-[40%] w-[25rem] h-[25rem] bg-purple-600/10 rounded-full blur-[150px] animate-pulse" />

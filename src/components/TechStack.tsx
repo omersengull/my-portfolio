@@ -20,7 +20,7 @@ const TechStack = () => {
       <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[#020617] to-transparent z-10" />
 
       <motion.div
-        className="flex w-max gap-12 items-center px-6"
+        className="flex w-max gap-12 items-center px-6 will-change-transform"
         animate={{ x: ["0%", "-50%"] }}
         transition={{
           ease: "linear",

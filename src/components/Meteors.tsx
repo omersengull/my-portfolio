@@ -5,16 +5,17 @@ export const Meteors = ({ number }: { number?: number }) => {
   const [meteorStyles, setMeteorStyles] = useState<any[]>([]);
 
   useEffect(() => {
-    // Ekran genişliğini al
     const width = window.innerWidth;
+    const height = window.innerHeight;
     
     const styles = new Array(number || 20).fill(true).map(() => ({
-      // top değerini -100px yaparak ekranın biraz üstünden başlamalarını sağlıyoruz
-      top: -5, 
-      // Ekranın tamamına (veya biraz daha fazlasına) yayılmasını sağla
+      // Meteorlar artık ekranın her yüksekliğinde (0 ile height arası) doğabilir
+      top: Math.floor(Math.random() * height) + "px", 
+      // Ekranın her genişliğinde (0 ile width arası) doğabilir
       left: Math.floor(Math.random() * width) + "px",
-      animationDelay: Math.random() * (0.8 - 0.2) + 0.2 + "s",
-      animationDuration: Math.floor(Math.random() * (10 - 2) + 2) + "s",
+      animationDelay: Math.random() * 0.8 + 0.2 + "s",
+      // Süzülme etkisini artırmak için süreyi biraz uzattık (akıcı hareket)
+      animationDuration: Math.floor(Math.random() * 10 + 6) + "s",
     }));
     setMeteorStyles(styles);
   }, [number]);
@@ -26,12 +27,12 @@ export const Meteors = ({ number }: { number?: number }) => {
       {meteorStyles.map((style, idx) => (
         <span
           key={"meteor" + idx}
-          // bg-slate-500 yerine bg-white yaparak daha parlak görünmelerini sağladık
-          className="pointer-events-none absolute left-1/2 top-1/2 h-0.5 w-0.5 rotate-[215deg] animate-[meteor_linear_infinite] rounded-[9999px] bg-white shadow-[0_0_0_1px_#ffffff10]"
+          // rotate-[215deg] sınıfını sildik, animasyon zaten 160deg ile çalışacak
+          className="pointer-events-none absolute h-0.5 w-0.5 animate-[meteor_linear_infinite] rounded-full bg-white shadow-[0_0_0_1px_#ffffff10]"
           style={style}
         >
-          {/* Kuyruk rengini de beyaza (slate-200) çektik */}
-          <div className="pointer-events-none absolute top-1/2 -z-10 h-[1px] w-[50px] -translate-y-1/2 bg-gradient-to-r from-slate-200 to-transparent" />
+          {/* Kuyruk: -translate-x-full ile baş kısmın arkasında kalmasını sağladık */}
+          <div className="pointer-events-none absolute top-1/2 -z-10 h-[1px] w-[60px] -translate-x-full -translate-y-1/2 bg-gradient-to-r from-transparent to-slate-200" />
         </span>
       ))}
     </>

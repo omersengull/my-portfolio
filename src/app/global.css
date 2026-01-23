@@ -9,10 +9,21 @@
   --color-glass-border: rgba(255, 255, 255, 0.1);
 
   /* Meteor animasyonu */
-  @keyframes meteor {
-    0% { transform: rotate(215deg) translateX(0); opacity: 1; }
-    70% { opacity: 1; }
-    100% { transform: rotate(215deg) translateX(-500px); opacity: 0; }
+  /* global.css içinde */
+@keyframes meteor {
+    0% { 
+      /* 160 derece: Sağ üstten sol alta çok daha şık ve yatay bir açı sağlar */
+      transform: rotate(160deg) translateX(0); 
+      opacity: 1; 
+    }
+    70% { 
+      opacity: 1; 
+    }
+    100% { 
+      /* Mesafeyi 1500px yaptık ki ekranın dışına tamamen çıksın */
+      transform: rotate(160deg) translateX(1500px); 
+      opacity: 0; 
+    }
   }
 }
 
@@ -31,4 +42,8 @@
 
 .animate-float {
   animation: float 10s ease-in-out infinite;
+}
+.animate-meteor-effect {
+  will-change: transform;
+  transform: translateZ(0); /* Donanım hızlandırmasını tetikler */
 }

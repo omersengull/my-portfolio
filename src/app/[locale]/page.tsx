@@ -16,14 +16,14 @@ export default async function Home() {
 
   return (
     // 1. DÜZELTME: main'den bg rengini kaldırdık, relative bıraktık
-    <main className="relative min-h-screen w-full flex flex-col items-center p-6 overflow-x-hidden">
+    <main className="relative min-h-screen w-full flex flex-col items-center overflow-x-hidden">
       <Spotlight />
       
       {/* 2. DÜZELTME: En alt katman (Zifiri Karanlık Zemin) */}
       <div className="fixed inset-0 bg-[#020617] -z-50" />
 
       {/* 3. DÜZELTME: Auralar ve Izgara (Zemin'in bir tık üstü) */}
-      <div className="fixed inset-0 -z-40 overflow-hidden pointer-events-none">
+      <div className="fixed inset-0 -z-40 overflow-hidden pointer-events-none ">
         <Meteors number={40} />
         <div className="absolute top-[5%] left-[10%] w-[30rem] h-[30rem] bg-neon-cyan/10 rounded-full blur-[120px] animate-float" />
         <div className="absolute bottom-[5%] right-[10%] w-[35rem] h-[35rem] bg-neon-pink/10 rounded-full blur-[120px] animate-float [animation-delay:2s]" />
@@ -44,6 +44,13 @@ export default async function Home() {
           delay={0}
         />
         <FloatingShape
+          color="bg-neon-black/10"
+          size="110px"
+          top="75%"
+          left="5%"
+          delay={1}
+        />
+        <FloatingShape
           color="bg-neon-pink/10"
           size="100px"
           top="65%"
@@ -52,7 +59,7 @@ export default async function Home() {
         />
         <FloatingShape
           color="bg-purple-500/10"
-          size="180px"
+          size="150px"
           top="35%"
           left="75%"
           delay={4}

@@ -1,11 +1,15 @@
 "use client";
 import { motion } from "framer-motion";
-import { Mail, Github, Linkedin, Send } from "lucide-react";
+import { Mail, Github, Linkedin } from "lucide-react";
 import { useTranslations } from "next-intl";
+
 export default function Contact() {
     const t = useTranslations('Contact');
   return (
-    <footer className="w-full py-24 bg-glass border-t border-glass-border">
+    /* DEĞİŞİKLİK: 'relative' ve 'z-10' eklendi. 
+       Bu sayede footer, arka plandaki meteorların (-z-45) önüne geçer.
+    */
+ <footer className="relative z-10 w-full py-24 bg-glass border-t border-glass-border backdrop-blur-xl">
       <div className="max-w-4xl mx-auto px-6 text-center">
         <motion.h2 
           initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}
@@ -36,7 +40,7 @@ function SocialLink({ href, icon, label, color }: any) {
   return (
     <a 
       href={href} target="_blank"
-      className={`flex items-center gap-3 px-8 py-4 rounded-2xl bg-white/5 border border-white/10 transition-all duration-300 hover:scale-110 ${color}`}
+      className={`flex cursor-pointer items-center gap-3 px-8 py-4 rounded-2xl bg-white/5 border border-white/10 transition-all duration-300 hover:scale-110 ${color}`}
     >
       {icon} <span className="font-bold">{label}</span>
     </a>

@@ -24,12 +24,13 @@
     },
     "work": {
       "title": "Work",
-      "value": "Freelance / Projects"
+      "value": "Student / Projects"
     },
     "vision": {
       "title": "Vision",
       "description": "My main goal is not just to write code, but to solve a problem in the most elegant and efficient way. In the future, I want to take part in the architecture of large-scale systems."
-    }
+    },
+    "downloadCV":"Download CV file"
   },
   "ProjectsCard": {
     "noDescription": "No description provided for this project, but it's definitely a great job!",
@@ -41,6 +42,14 @@
   "Contact": {
     "title": "LET'S MEET!",
     "description": "You can always write to me for new projects, collaborations, or just to say hello.",
-    "footer": "All rights reserved in codes."
+    "footer": "All rights reserved in codes.",
+    "form":{
+      "email": "E-Mail",
+      "name": "Name",
+      "message": "Your message",
+      "send": "Send",
+      "sending":"Sending"
+
+    }
   }
 }

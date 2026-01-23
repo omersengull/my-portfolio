@@ -1,6 +1,10 @@
 @import "tailwindcss";
-@html{ scroll-behavior: smooth; }
 
+@layer base {
+  html {
+    
+  }
+}
 @theme {
   --color-dark-bg: #020617;
   --color-neon-cyan: #22d3ee;

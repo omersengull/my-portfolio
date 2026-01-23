@@ -9,6 +9,7 @@ import About from "@/components/About";
 import Contact from "@/components/Contact";
 import { Meteors } from "@/components/Meteors";
 import { Spotlight } from "@/components/Spotlight";
+import Navbar from "@/components/Navbar";
 
 export default async function Home() {
   const repos = await fetchGithubRepos();
@@ -74,18 +75,10 @@ export default async function Home() {
       </div>
 
       {/* --- NAVİGASYON --- */}
-      <nav className="fixed top-8 px-6 py-4 rounded-full bg-glass border border-glass-border backdrop-blur-xl flex items-center gap-8 text-sm font-medium z-50 shadow-2xl">
-        <div className="flex gap-8">
-          <a href="#" className="hover:text-neon-cyan transition-colors">{t("home")}</a>
-          <a href="#projects" className="hover:text-neon-cyan transition-colors">{t("projects")}</a>
-          <a href="#about" className="hover:text-neon-cyan transition-colors">{t("about")}</a>
-        </div>
-        <div className="w-[1px] h-4 bg-white/10"></div>
-        <LanguageSwitcher />
-      </nav>
+      <Navbar/>
 
       {/* --- HERO SECTION --- */}
-      <section className="w-full min-h-screen flex items-center justify-center pt-48 pb-32 z-10">
+      <section id="hero" className="w-full min-h-screen flex items-center justify-center pt-48 pb-32 z-10">
         <HeroSection />
       </section>
 
@@ -93,7 +86,7 @@ export default async function Home() {
       <TechStack />
       <About/>
       {/* --- PROJELER --- */}
-      <section id="projects" className="w-full max-w-6xl mx-auto px-6 py-32 z-10">
+      <section id="projects" className="w-full max-w-6xl scroll-mt-40 mx-auto px-6 pb-32 pt-12 z-10">
         <div className="flex flex-col items-center mb-20 text-center">
           <h2 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-white via-white to-gray-600 bg-clip-text text-transparent mb-6 italic tracking-tight">
             {t("FeaturedProjects")}

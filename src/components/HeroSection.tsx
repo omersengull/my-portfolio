@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import { handleScroll } from "./Scroll";
 
 const HeroSection = () => {
   const t = useTranslations("Hero");
@@ -34,12 +35,14 @@ const HeroSection = () => {
         {/* flex-col sm:flex-row -> mobilde butonlar alt alta, tablette yan yana gelir */}
         <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center">
           <button className="cursor-pointer px-8 py-4 bg-white text-black font-bold rounded-xl hover:bg-neon-cyan hover:scale-105 transition-all duration-300 shadow-[0_0_25px_rgba(34,211,238,0.3)]">
-            <a href="#projects" className="block w-full h-full">
+            <a href="#projects" onClick={(e) => handleScroll(e, '#projects')} className="block w-full h-full">
               {t("buttons.viewProjects")}
             </a>
           </button>
-          <button className="cursor-pointer px-8 py-4 bg-glass border border-glass-border rounded-xl font-bold hover:bg-white/10 transition-all text-white">
-            {t("buttons.contact")}
+          <button  className="cursor-pointer px-8 py-4 bg-glass border border-glass-border rounded-xl font-bold hover:bg-white/10 transition-all text-white">
+            <a onClick={(e) => handleScroll(e, '#contact')} href="#contact" className="block w-full h-full">
+              {t("buttons.contact")}
+            </a>
           </button>
         </div>
       </motion.div>

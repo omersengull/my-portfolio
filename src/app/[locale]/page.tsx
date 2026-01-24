@@ -14,12 +14,12 @@ import Navbar from "@/components/Navbar";
 export default async function Home() {
   const repos = await fetchGithubRepos();
   const t = await getTranslations("Index");
-
+  const SELECTED_REPOS = [1135944527, 1139179585, 907931928];
   return (
     // 1. DÜZELTME: main'den bg rengini kaldırdık, relative bıraktık
     <main className="relative min-h-screen w-full flex flex-col items-center overflow-x-hidden">
       <Spotlight />
-      
+
       {/* 2. DÜZELTME: En alt katman (Zifiri Karanlık Zemin) */}
       <div className="fixed inset-0 bg-[#020617] -z-50" />
 
@@ -30,7 +30,7 @@ export default async function Home() {
         <div className="absolute bottom-[5%] right-[10%] w-[35rem] h-[35rem] bg-neon-pink/10 rounded-full blur-[120px] animate-float [animation-delay:2s]" />
         <div className="absolute top-[30%] left-[40%] w-[25rem] h-[25rem] bg-purple-600/10 rounded-full blur-[150px] animate-pulse" />
       </div>
-      
+
       {/* Izgara Deseni */}
       <div className="fixed inset-0 -z-30 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
 
@@ -75,18 +75,24 @@ export default async function Home() {
       </div>
 
       {/* --- NAVİGASYON --- */}
-      <Navbar/>
+      <Navbar />
 
       {/* --- HERO SECTION --- */}
-      <section id="hero" className="w-full min-h-screen flex items-center justify-center pt-48 pb-32 z-10">
+      <section
+        id="hero"
+        className="w-full min-h-screen flex items-center justify-center pt-48 pb-32 z-10"
+      >
         <HeroSection />
       </section>
 
       {/* --- TECH STACK --- */}
       <TechStack />
-      <About/>
+      <About />
       {/* --- PROJELER --- */}
-      <section id="projects" className="w-full max-w-6xl scroll-mt-40 mx-auto px-6 pb-32 pt-12 z-10">
+      <section
+        id="projects"
+        className="w-full max-w-6xl scroll-mt-40 mx-auto px-6 pb-32 pt-12 z-10"
+      >
         <div className="flex flex-col items-center mb-20 text-center">
           <h2 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-white via-white to-gray-600 bg-clip-text text-transparent mb-6 italic tracking-tight">
             {t("FeaturedProjects")}
@@ -96,15 +102,20 @@ export default async function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {repos
-            .filter((repo: GithubRepo) => !repo.fork)
+            .filter((repo: GithubRepo) => SELECTED_REPOS.includes(repo.id))
+            .sort((a, b) => {
+       
+              return (
+                SELECTED_REPOS.indexOf(a.id) - SELECTED_REPOS.indexOf(b.id)
+              );
+            })
             .slice(0, 6)
             .map((repo: GithubRepo) => (
               <ProjectCard key={repo.id} repo={repo} />
             ))}
         </div>
       </section>
-      <Contact/>
-      
+      <Contact />
     </main>
   );
 }

@@ -30,7 +30,7 @@
       "title": "Vision",
       "description": "My main goal is not just to write code, but to solve a problem in the most elegant and efficient way. In the future, I want to take part in the architecture of large-scale systems."
     },
-    "downloadCV":"Download CV file"
+    "downloadCV": "Download CV file"
   },
   "ProjectsCard": {
     "noDescription": "No description provided for this project, but it's definitely a great job!",
@@ -43,13 +43,84 @@
     "title": "LET'S MEET!",
     "description": "You can always write to me for new projects, collaborations, or just to say hello.",
     "footer": "All rights reserved in codes.",
-    "form":{
+    "form": {
       "email": "E-Mail",
       "name": "Name",
       "message": "Your message",
       "send": "Send",
-      "sending":"Sending"
-
+      "sending": "Sending"
+    }
+  },
+  "Projects": {
+    "items": {
+      "linkle": {
+        "title": "Linkle - URL Shortener",
+        "tech_stack": [
+          "Next.js",
+          "TypeScript",
+          "Redis (Upstash)",
+          "Supabase (PostgreSQL)",
+          "Tailwind CSS"
+        ],
+        "problem": {
+          "title": "Problem",
+          "content": "Difficulty in managing lengthy URLs and high latency issues during the redirection process."
+        },
+        "solution": {
+          "title": "Solution",
+          "content": "Integrated Redis (Upstash) for ultra-fast redirection through caching. Utilized Supabase for persistent data storage and Next.js with TypeScript for a robust, type-safe development environment."
+        },
+        "outcome": {
+          "title": "Outcome",
+          "content": "Gained deep understanding of serverless performance optimization, edge-side caching strategies, and efficient database schema design."
+        }
+      },
+      "techsepet": {
+        "title": "TechSepet - E-Commerce Platform",
+        "tech_stack": [
+          "Next.js",
+          "TypeScript",
+          "Prisma",
+          "MongoDB",
+          "Google Cloud Platform",
+          "Tailwind CSS"
+        ],
+        "problem": {
+          "title": "Problem",
+          "content": "Efficiently managing large product catalogs, ensuring high-performance image delivery, and maintaining smooth shopping cart interactions."
+        },
+        "solution": {
+          "title": "Solution",
+          "content": "Implemented a flexible data model using Prisma and MongoDB. Leveraged Google Cloud Platform for scalable image storage and optimized asset delivery using Next.js performance features."
+        },
+        "outcome": {
+          "title": "Outcome",
+          "content": "Mastered full-stack development patterns, cloud integration strategies, and complex state management for e-commerce workflows."
+        }
+      },
+      "my-portfolio": {
+        "title": "Modern & Progressive Portfolio",
+        "tech_stack": [
+          "Next.js 15",
+          "TypeScript",
+          "Framer Motion",
+          "Next-intl (I18n)",
+          "Tailwind CSS",
+          "Lucide Icons"
+        ],
+        "problem": {
+          "title": "Problem",
+          "content": "The need for a high-performance, aesthetic, and multilingual digital showcase to best present my projects and competencies to both global and local audiences."
+        },
+        "solution": {
+          "title": "Solution",
+          "content": "A comprehensive I18n structure was established using next-intl. While an interactive user experience (UX) was created with Framer Motion and Tailwind, project updates were made dynamic through GitHub API integration."
+        },
+        "outcome": {
+          "title": "Outcome",
+          "content": "A professional platform focused on search engine optimization (SEO), high accessibility, and proving technical depth (App Router, Server Components) was developed."
+        }
+      }
     }
   }
 }

@@ -7,6 +7,7 @@ export interface GithubRepo{
     language:string;
     homepage:string;
     fork:boolean;
+    updated_at?:string;
 }
 export async function fetchGithubRepos(): Promise<GithubRepo[]> {
   try {

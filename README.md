@@ -17,8 +17,8 @@ This is a high-performance, SEO-optimized personal portfolio built with the late
 
 | Desktop View | Mobile Responsiveness |
 | :---: | :---: |
-<img src="./public/screenshots/foto1.png" width="400">	<img src="./public/screenshots/mobil1.jpeg" width="200">
-<img src="./public/screenshots/foto2.png" width="400">	<img src="./public/screenshots/mobil2.jpeg" width="200">
+|<img src="./public/screenshots/foto1.png" width="400"> | <img src="./public/screenshots/mobil1.jpeg" width="200">|
+|<img src="./public/screenshots/foto2.png" width="400"> |	<img src="./public/screenshots/mobil2.jpeg" width="200">|
 
 
 ---

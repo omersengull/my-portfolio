@@ -42,12 +42,12 @@ This is a high-performance, SEO-optimized personal portfolio built with the late
 
 ## 🛠️ Tech Stack
 
--Frontend: Next.js 15 (App Router), React 19, Tailwind CSS, Framer Motion
--Internationalization: Next-intl
--Icons & Assets: Lucide React, SVG Icons
--Language: TypeScript
--Deployment: Vercel
--API: GitHub REST API
+* **Frontend:** Next.js 15 (App Router), React 19, Tailwind CSS, Framer Motion
+* **Internationalization:** Next-intl
+* **Icons & Assets:** Lucide React, SVG Icons
+* **Language:** TypeScript
+* **Deployment:** Vercel
+* **API:** GitHub REST API
 
 ## ⚙️ Installation
 

@@ -14,7 +14,7 @@ import Navbar from "@/components/Navbar";
 export default async function Home() {
   const repos = await fetchGithubRepos();
   const t = await getTranslations("Index");
-  const SELECTED_REPOS = [1135944527, 1139179585, 907931928];
+  const SELECTED_REPOS = [1135944527, 1139179585, 1141978320];
   return (
     // 1. DÜZELTME: main'den bg rengini kaldırdık, relative bıraktık
     <main className="relative min-h-screen w-full flex flex-col items-center overflow-x-hidden">

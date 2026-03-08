@@ -75,6 +75,28 @@
           "content": "Gained deep understanding of serverless performance optimization, edge-side caching strategies, and efficient database schema design."
         }
       },
+      "dev-snippets": {
+        "title": "DevSnippets - Code Sharing Hub",
+        "tech_stack": [
+          "Next.js",
+          "TypeScript",
+          "Supabase (PostgreSQL)",
+          "Tailwind CSS",
+          "Prism.js"
+        ],
+        "problem": {
+          "title": "Problem",
+          "content": "Developers lack a dedicated, visually appealing platform to store, organize, and share reusable code snippets with the community."
+        },
+        "solution": {
+          "title": "Solution",
+          "content": "Built a full-stack snippet sharing platform with Supabase for auth and data storage, syntax highlighting via Prism.js, and public/private visibility controls — all in a sleek dark-themed UI."
+        },
+        "outcome": {
+          "title": "Outcome",
+          "content": "Deepened expertise in Next.js App Router, server components, Supabase row-level security, and building community-driven full-stack applications."
+        }
+      },
       "techsepet": {
         "title": "TechSepet - E-Commerce Platform",
         "tech_stack": [

@@ -75,6 +75,28 @@
           "content": "Serverless mimaride performans optimizasyonu, Redis ile veri önbellekleme ve edge fonksiyonları aracılığıyla dinamik yönlendirme konularında uzmanlık kazanıldı."
         }
       },
+      "dev-snippets": {
+  "title": "DevSnippets - Kod Paylaşım Platformu",
+  "tech_stack": [
+    "Next.js",
+    "TypeScript",
+    "Supabase (PostgreSQL)",
+    "Tailwind CSS",
+    "Prism.js"
+  ],
+  "problem": {
+    "title": "Sorun",
+    "content": "Geliştiricilerin yeniden kullanılabilir kod parçacıklarını depolamak, düzenlemek ve toplulukla paylaşmak için görsel açıdan çekici, özel bir platformdan yoksun olması."
+  },
+  "solution": {
+    "title": "Çözüm",
+    "content": "Supabase ile kimlik doğrulama ve veri depolama, Prism.js ile sözdizimi vurgulama ve public/private görünürlük kontrollerini bir araya getiren, sade ve karanlık temalı bir arayüze sahip full-stack snippet paylaşım platformu geliştirildi."
+  },
+  "outcome": {
+    "title": "Sonuç",
+    "content": "Next.js App Router, server components, Supabase satır düzeyinde güvenlik (RLS) ve topluluk odaklı full-stack uygulama geliştirme konularında derinlemesine deneyim kazanıldı."
+  }
+},
       "techsepet": {
         "title": "TechSepet - E-Commerce Platform",
         "tech_stack": [

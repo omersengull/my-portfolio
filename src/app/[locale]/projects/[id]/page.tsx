@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import Navbar from "@/components/Navbar";
 import Contact from "@/components/Contact";
 import { Spotlight } from "@/components/Spotlight";

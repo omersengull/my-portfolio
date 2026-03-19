@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import { fetchGithubRepos, GithubRepo } from "@/lib/github";
 import ProjectCard from "@/components/ProjectCard";
 import HeroSection from "@/components/HeroSection";

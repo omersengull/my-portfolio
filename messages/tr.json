@@ -17,7 +17,7 @@
   },
   "About": {
     "title": "Hakkımda",
-    "description": "Merhaba! Ben Ömer. Modern web teknolojileriyle kullanıcı odaklı, performanslı ve estetik dijital deneyimler inşa etmeyi seviyorum. Sürekli öğrenen ve yeni teknolojileri denemekten çekinmeyen biriyim. Şu an ağırlıklı olarak Next.js ve TypeScript ekosistemindeyim.",
+    "description": "Merhaba! Ben Ömer. Modern web teknolojileriyle kullanıcı odaklı, performanslı ve estetik dijital deneyimler inşa etmeyi seviyorum. Sürekli öğrenen ve yeni teknolojileri denemekten çekinmeyen biriyim. Şu an ağırlıklı olarak Remix (React Router) ve TypeScript ekosistemindeyim.",
     "location": {
       "title": "Konum",
       "value": "Trabzon, Türkiye"

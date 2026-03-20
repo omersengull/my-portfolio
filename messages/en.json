@@ -17,7 +17,7 @@
   },
   "About": {
     "title": "About Me",
-    "description": "Hello! I'm Omer. I love building user-oriented, performant, and aesthetic digital experiences with modern web technologies. I am a person who constantly learns and does not hesitate to try new technologies. Currently, I am mainly in the Next.js and TypeScript ecosystem.",
+    "description": "Hello! I'm Omer. I love building user-oriented, performant, and aesthetic digital experiences with modern web technologies. I am a person who constantly learns and does not hesitate to try new technologies. Currently, I am mainly in the Remix (React Router) and TypeScript ecosystem.",
     "location": {
       "title": "Location",
       "value": "Trabzon, Turkiye"
